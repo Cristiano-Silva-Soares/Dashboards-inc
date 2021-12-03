@@ -1,0 +1,20 @@
+<!-- Register Page -->
+<router-outlet></router-outlet>
+<div class="main-container bodyo">
+    <div id="log-in" class="left-container log-in">
+        <h1>Hey, sign up here!</h1>
+        <img src="https://i.imgur.com/cbK3do2.png" alt="">
+        <div style="width: 100%;">
+            <form action="index.html" class="signup-form">
+                <input ([ngModel])='user.userName' type="text" name="username" id="username" placeholder="Username">
+                <input ([ngModel])='user.email' type="email" name="email" id="email" placeholder="E-mail">
+                <input ([ngModel])='user.userPhoto' type="text" name="photo" id="photo" placeholder="Photo URL">
+                <input (input)='confirmingPassword($event)' type="password"  name="confirmingPassword" id="confirmingPassword" placeholder="Password">
+                <input ([ngModel])='user.password' type="password" name="password" id="password" placeholder="Confirm Password">
+                <button type="submit" id="submit" class="button log-in-btn mb-5" disabled (click)='register()'>Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div class="right-container"></div>
+</div>
+<!--/Register Page -->

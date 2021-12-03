@@ -1,0 +1,20 @@
+<!-- Login Page -->
+<router-outlet></router-outlet>
+<div class="main-container bodyo">
+  <div id="log-in" class="left-container log-in">
+    <h1>So, let's log in!</h1>
+    <img src="https://i.imgur.com/cbK3do2.png" alt="">
+    <div style="width: 100%;">
+      <form action="index.html" class="signup-form">
+        <input [(ngModel)]='userLogin.email' type="email" id="email" placeholder="E-mail">
+        <input [(ngModel)]='userLogin.password' type="password" id="password" placeholder="Password">
+        <button type="submit" id="submit" class="button log-in-btn" disabled (click)='login()'>Login</button>
+      </form>
+    </div>
+    <div class="login-link-container">
+      <p class="login-link"><a  routerLink="/register"> Don't have an account? Click here!</a></p>
+    </div>
+  </div>
+  <div class="right-container"></div>
+</div>
+<!--/Login Page -->

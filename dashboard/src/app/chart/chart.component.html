@@ -1,0 +1,58 @@
+<!-- Line Chart -->
+<mat-grid-list cols="2" rowHeight="2:1">
+    <div class="grid-component">
+        <div class="card-wrapper">
+            <div fxLayoutAlign="center" fxLayoutGap="5px">
+                <mat-card>
+                    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"
+                        style="width: 100%; height: 400px; display: block;">
+                    </highcharts-chart>
+                </mat-card>
+                <!--/ Line Chart -->
+
+                <!-- Right Side Cards -->
+                <mat-card>
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-card-subtitle>Resolved</mat-card-subtitle>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <h2>449</h2>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>Received</mat-card-subtitle>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <h2>426</h2>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>Average first response time</mat-card-subtitle>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <h2>33m</h2>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>Average first time</mat-card-subtitle>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <h2>3h 8m</h2>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <mat-card-subtitle>Resolutions within SLA</mat-card-subtitle>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <h2>94%</h2>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card>
+
+            </div>
+        </div>
+    </div>
+</mat-grid-list>
+
+<!--/Right Side Cards -->

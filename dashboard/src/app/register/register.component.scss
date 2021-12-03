@@ -1,0 +1,139 @@
+.bodyo {
+  background-color:black;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Secular One', sans-serif;
+}
+
+h1{
+  color: #6314a8;
+}
+
+.main-container {
+  display: flex;
+  width: 70%;
+  height: 700px;
+  min-height: 80vh;
+  background-color: white;
+  margin: 10vh auto;
+  border-radius: 12px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.login-link {
+  color: #777;
+}
+
+.login-link:hover {
+  color: #6314a8;
+  cursor: pointer;
+}
+
+.left-container {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right-container {
+  width: 60%;
+  height: 100%;
+  background-image: url('https://i.imgur.com/n0o7rjv.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+}
+.signup-form {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form input {
+  border-radius: 200px;
+  padding: 5px 15px;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: #ddd;
+  color: #444;
+  border: none;
+}
+
+.signup-form input {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+.signup-form input:focus {
+  outline: none;
+}
+
+.signup-form button {
+  color: white;
+  background-color: #6314a8;
+  border: none;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.signup-form button:hover{
+  background-color: #697bc7;
+  cursor: pointer;
+}
+
+@media (max-width:1240px){
+  .left-container{
+    width: 50%;
+  }
+  .right-container{
+    width: 50%;
+  }
+}
+
+@media (max-width:970px){
+  .signup-form button{
+    font-size: 1rem;
+  }
+  .signin-link{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:950px) {
+  .left-container{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .main-container h1{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .signup-form input{
+    margin-top: 0.5rem;
+  }
+  .right-container{
+    display: none;
+  }
+}
+
+@media (max-width:550px){
+  .main-container{
+    width: 90%;
+    left: 5%;
+  }
+}
